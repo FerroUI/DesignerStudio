@@ -1,0 +1,29 @@
+[package]
+name = "designer-studio-browser"
+description = "The browser host of FerroUI Designer Studio: the designer as a WebAssembly module on a canvas"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+publish = false
+autotests = false
+autobenches = false
+autoexamples = false
+
+# A binary: the Emscripten target links wasm-bindgen exports only into executables. The host page
+# (wwwroot/) creates the module and calls `runMain`; FerroUI/scripts/build-browser.sh with
+# FERROUI_BROWSER_WORKSPACE assembles the site (docs/apps.md of FerroUI).
+[[bin]]
+name = "designer-studio-browser"
+path = "program.rs"
+
+[dependencies]
+# Designer Studio is the sample of the submodule, built from its sources, without its desktop host
+# and its MCP server (default features off).
+designer-studio = { path = "../FerroUI/samples/DesignerStudio", default-features = false }
+ferroui-base = { workspace = true }
+ferroui-controls = { workspace = true }
+ferroui-browser = { workspace = true }
+ferroui-fonts-inter = { workspace = true }
+wasm-bindgen = { workspace = true }
