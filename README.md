@@ -7,6 +7,8 @@ stages and keyframe animation, as a WebAssembly module on a canvas.
 
 **Open it in the browser:** https://ferroui.github.io/DesignerStudio/
 
+![Designer Studio in the browser with the starter document](docs/images/designer-studio-browser.jpg)
+
 Designer Studio is the sample `samples/DesignerStudio` of FerroUI, built on its `ferroui-designer`
 crates ([the designer documentation](https://github.com/wieslawsoltes/FerroUI/blob/main/docs/designer/README.md)),
 from the sources of the FerroUI submodule of this repository. This repository adds only what the
