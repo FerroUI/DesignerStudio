@@ -28,3 +28,7 @@ jobs:
       check: |
         -p designer-studio-browser
       browser-package: designer-studio-browser
+      # The site in the runner's Chrome with FerroUI's browser harness: it loads and draws, and the
+      # Preview button opens the preview without an error (no npm packages needed).
+      browser-tests-setup: ''
+      browser-tests: node DesignerStudio.Browser/tests/browser-smoke.mjs "$SITE"

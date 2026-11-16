@@ -32,7 +32,8 @@ dependencies and profiles of `Cargo.toml` are kept in step with the submodule by
 ## Build
 
 Every push to `main` builds the site and deploys it to GitHub Pages; pull requests build it and run
-the smoke test without deploying. To build the site yourself:
+the smoke test without deploying. The browser test `DesignerStudio.Browser/tests/browser-smoke.mjs` then
+opens the built site in Chrome and clicks the Preview button, and fails on any console error. To build the site yourself:
 
 ```sh
 git clone --recurse-submodules https://github.com/FerroUI/DesignerStudio.git
