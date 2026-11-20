@@ -5,7 +5,7 @@ XAML designer of [FerroUI](https://github.com/wieslawsoltes/FerroUI), a cross-pl
 for Rust: an artboard with synchronized XAML, layers, editable properties, layout tools, preview
 stages and keyframe animation, as a WebAssembly module on a canvas.
 
-**Open it in the browser:** https://ferroui.github.io/DesignerStudio/
+**Open it in the browser:** https://ferroui.com/DesignerStudio/
 
 ![Designer Studio in the browser with the starter document](docs/images/designer-studio-browser.jpg)
 
